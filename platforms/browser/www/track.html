@@ -93,9 +93,25 @@
 </head>
 
 <body style="margin:0; padding:0;">
-
     <!-- display the map here, you can changed the height or style -->
     <div id="map_canvas" style="height:25em; margin:0; padding:0;"></div>
+    <div data-role="page" id="signup">
+        <div data-role="main" class="ui-content">
+            <label>Driver Details:</label>
+            <br>
+            <input type="text" readonly id='r_fname' />
+            <input type="text" readonly id='r_plate' />
+            <br>
+            <br>
+            <label>Trip Details:</label>
+            <br>
+            <input type="text" readonly id='r_fare' />
+            <input type="text" readonly id='r_duration' />
+        </div> <!-- main -->
+        <div data-role="footer">
+            <div id="result1"></div>
+        </div> <!-- footer -->  
+    </div> <!-- page -->
 </body>
 
 </html>

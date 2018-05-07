@@ -13,8 +13,6 @@
 	<!-- Google Maps Javascript API -->
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAjhXVABFxTOnBzKzZnC1dICeZ1fqDyDg&libraries=places&callback=initMap"async defer></script>
       
-      <script type="text/javascript" src=js/index.js></script>	
-      <script type="text/javascript" src="cordova.js"></script>
   </head>
   <body style="margin-top: 60px;">
   
@@ -66,14 +64,14 @@
                   // Use Geocoder to get current address and fill out the origin text box.
                   var geocoder = new google.maps.Geocoder;
                   var latlng = {lat: position.coords.latitude, lng: position.coords.longitude};
-                  var posaccuracy = {accuracy: position.coords.accuracy};
+                  var posAccuracy = {accuracy: position.coords.accuracy};
                   geocoder.geocode({'location': latlng}, function(results, status) {
                 	  
                       if (status === 'OK') {
                           if (results[0]) {
                               document.getElementById('origin-input').value = results[0].formatted_address;
                               origin_placeid = results[0].place_id;
-                             window.alert(position.coords.accuracy);
+                             //window.alert(results[0].geometry.location_type);
                           } else {
                               window.alert('No results found.');
                           }

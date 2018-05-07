@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
@@ -28,7 +27,7 @@
                 <br>
                 <button id="btnSubmitSignup">Submit</button>
             </form>
-            <button id="btnCancelSignup" onclick="index.html'">Cancel</button>
+            <!--<button id="btnCancelSignup" onclick="index.html'">Cancel</button>-->
         </div> <!-- main -->
         <div data-role="footer">
             <div id="result1"></div>
@@ -41,7 +40,8 @@
     <script>
         function signup()
         {
-            var baseUrl = "https://betacars-webportal.000webhostapp.com";
+            //var baseUrl = "https://betacars-webportal.000webhostapp.com";
+            var baseUrl = "http://localhost/betacarswebportal";
             var fname = document.getElementById('r_fname').value;
             var lname = document.getElementById('r_lname').value;
             var mobile = document.getElementById('r_mobile').value;
